@@ -429,6 +429,8 @@ font-weight: bold;
   padding: 0 40px 0 40px;
 }
 .arc img{
+  transform: rotate(-20deg);
+  margin-top: -50px;
   width: 150px;
   height: 150px;
 }
