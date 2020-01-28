@@ -1,0 +1,707 @@
+*{
+  font-family: 'Raleway', sans-serif;
+}
+a{
+  text-decoration: none;
+}
+body{
+  margin: 0;
+}
+.navbar{
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  padding: 10px;
+  display: flex;
+  z-index: 10;
+}
+.logo{
+  width: 30%;
+}
+.logo a{
+  color: white;
+  text-transform: uppercase;
+}
+.nav{
+  width: 10%;
+}
+.nav a{
+  color: white;
+  text-transform: uppercase;
+}
+.nav a:hover{
+  font-weight: bold;
+}
+/*First section*/
+.section1{
+  position: relative;
+  width: 100%;
+  height: 700px;
+  background: black;
+  overflow: hidden;
+}
+.section1 img{
+    width: 100%;
+}
+.welcome{
+  top: 0;
+  height: 700px;
+  width: 100%;
+  position: absolute;
+  justify-content: center;
+  text-align: center;
+  z-index: 2;
+  background: rgba(0, 0, 0, 0.7)
+}
+/*From the contact us page*/
+.greet{
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  height: 700px;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  text-align: center;
+  color: white;
+}
+.para1{
+  font-size: 150px;
+  font-weight: bold;
+}
+.para2{
+  margin-top: -200px;
+  font-size: 120px;
+  font-weight: bold;
+  opacity: 0.1;
+}
+.para3{
+  margin-top: -160px;
+  font-size: 100px;
+  font-weight: bold;
+  opacity: 0.2;
+}
+.para4{
+  margin-top: -135px;
+  font-size: 75px;
+  font-weight: bold;
+  opacity: 0.15;
+}
+.para5{
+  margin-top: -95px;
+  font-size: 50px;
+  font-weight: bold;
+  opacity: 0.1;
+}
+.grt{
+  position: absolute;
+  height: 100px;
+  width: 100px;
+  bottom: 100px;
+  right: 400px;
+}
+.startWord{
+  font-size: 50px;
+  font-weight: bold;
+  padding: 20px;
+}
+.sectionTwo{
+  display: flex;
+  height: 1000px;
+  justify-content: center;
+}
+.contactForm{
+  padding: 50px;
+}
+.uname, .email, .subject{
+  border: 0;
+  outline: none;
+  border-bottom: 1px solid black;
+  font-size: 20px;
+  padding: 5px;
+  width: 400px;
+  height: 30px;
+}
+.field1, .field2, .field3, .field4{
+  padding: 20px  0px;
+}
+.lbl{
+  font-size: 20px;
+}
+.hollow{
+  width: 140px;
+  height: 140px;
+}
+.graphics{
+  padding: 100px;
+  height: 800px;
+  position: relative;
+  width: 0px;
+}
+.dia{
+  position: relative;
+  margin-top: 50px;
+  width: 140px;
+  height: 140px;
+}
+.vb{
+  position: relative;
+  transform: rotate(-90deg);
+  background: black;
+  color: #ffbd17;
+  width: 500px;
+  bottom: -250px;
+  left: -250px;
+  z-index: 2;
+  text-align: center;
+}
+.hb{
+  padding: 0 100px 0 0;
+  background: black;
+  color: #ffbd17;
+  width: 550px;
+  position: relative;
+  bottom: -470px;
+  left: -200px;
+  text-align: right;
+}
+/*From the contact us page - END*/
+
+/*From the About us page*/
+#aboutLogo{
+  color: black;
+  text-transform: uppercase;
+}
+.nabu a{
+  color: black;
+  text-transform: uppercase;
+}
+.sectiona{
+    position: relative;
+    width: 100%;
+    height: 600px;
+}
+.aboutGreet{
+  display: flex;
+}
+.paraa{
+  font-size: 190px;
+  padding: 0 0 0 100px;
+}
+.parab{
+  font-size: 190px;
+  color: #ffbd17;
+  font-weight: bold;
+}
+.abtGrt{
+  position: relative;
+  left: 100px;
+  top: 350px;
+  width: 300px;
+  height: 300px;
+  transform: rotate(180deg);
+}
+.sectionb{
+  padding: 0 300px;
+  font-size: 20px;
+  line-height: 30px;
+}
+.sectionb p{
+  text-align: left;
+}
+.sectionb img{
+  width: 300px;
+  height: 300px;
+}
+.sectionc{
+  padding: 0 100px 0 100px;
+}
+.rowa{
+  display: flex;
+}
+.unbold{
+  margin-top: -80px;
+  font-size: 120px;
+}
+.bold{
+  margin-top: -150px;
+  font-size: 120px;
+  font-weight: bold;
+}
+.daymnd{
+  position: relative;
+  left: 100px;
+  top: 50px;
+  width: 250px;
+  height: 250px;
+}
+.hbr{
+  position: relative;
+  top: -120px;
+  right: -200px;
+  background: black;
+  color: #ffbd17;
+  width: 380px;
+  padding: 0 0 0 30px;
+}
+.vbr{
+  position: relative;
+  top: 50px;
+  right: -300px;
+  text-align: center;
+  background: black;
+  color: #ffbd17;
+  transform: rotate(270deg);
+  padding: 0 100px 0 0;
+  width: 300px;
+}
+.rowb{
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.colb{
+  width: 25%;
+  padding: 0px;
+}
+.circlea{
+  display: flex;
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  background: #ffbd17;
+  text-align: center;
+}
+.hold{
+  margin:auto;
+  vertical-align: middle;
+  text-align: center;
+}
+.one{
+  margin-top: -8px;
+  font-size: 35px;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-align: center;
+}
+.two{
+  margin-top: -40px;
+  font-size: 35px;
+  text-transform: uppercase;
+  text-align: center;
+}
+.three{
+  margin-top: -20px;
+  font-size: 23px;
+  text-align: center;
+}
+.four{
+  font-weight: bold;
+  margin-top: -20px;
+  font-size: 14px;
+  text-align: center;
+}
+.desc{
+  width: 300px;
+  font-size: 15px;
+}
+.vbnd{
+  background: black;
+  color: white;
+  transform: rotate(270deg);
+  position: relative;
+  width: 250px;
+  text-align: center;
+  top: 200px;
+}
+.hbnd{
+  position: relative;
+  top: 288px;
+  right: 100px;
+  width: 445px;
+  background: black;
+  color: white;
+  text-align: center;
+}
+.cellmid{
+  position: absolute;
+  right: 350px;
+}
+.cellmid img{
+  margin-top: 30px;
+  width: 250px;
+  height: 250px;
+  filter: invert(86%) sepia(16%) saturate(7083%) hue-rotate(345deg) brightness(106%) contrast(101%);
+}
+.absolutely_nothing{
+  margin-top: 100px;
+}
+/*From the about us page - END*/
+.welcome p{
+  color: white;
+  font-size: 70px;
+}
+.wlcm{
+  position: relative;
+  margin-top: 150px;
+  height: 100px;
+  width: 100px;
+}
+.tpword{
+    position: relative;
+    top: 40%;
+    font-weight: 1;
+}
+.btmword{
+  position: relative;
+  top: 30%;
+  margin-top: 0;
+font-weight: bold;
+}
+.section2{
+  display: flex;
+  height: 600px;
+}
+.row1{
+  background: #ffbd17;
+  width: 50%;
+  padding: 10px 50px 0 100px;
+}
+.top{
+  display: flex;
+  height: 580px;
+  justify-content: center;
+}
+.block1{
+  color: white;
+}
+.block1 p{
+  text-align: center;
+  width: 400px;
+  padding: 5px;
+  transform: rotate(270deg);
+  background: black;
+  margin-top: 380px;
+  position: absolute;
+  left: -100px;
+}
+.block2{
+  font-size: 80px;
+  padding: 100px;
+  font-weight: bold;
+}
+.block3{position: absolute;
+  margin-top: 300px;
+  background: white;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  left: 600px;
+  }
+.block3a{
+  height: 130px;
+  width: 130px;
+  background: #ffbd17;
+  border-radius: 50%;
+  margin: 10px;
+}
+.row2{
+  background: #e3e3e3;
+    width: 50%;
+}
+.bottom{
+  position: relative;
+  z-index: 2;
+  background: black;
+  color: white;
+  margin-left: -100px;
+  padding: 5px;
+  width: 250px;
+}
+.topa{
+    padding: 0 40px;
+    font-size: 50px;
+    font-weight: bold;
+}
+.lower{
+  font-size: 20px;
+  padding: 0 40px 0 40px;
+}
+.arc img{
+  width: 150px;
+  height: 150px;
+}
+.rowOne{
+  width: 50%;
+}
+.up{
+  display: flex;
+
+}
+.about{
+  font-size: 50px;
+  font-weight: bold;
+  padding: 30px 100px 0 100px;
+}
+.blkd{
+  position: absolute;
+  left: 500px;
+  background: black;
+  color: white;
+  height: 20px;
+  width: 500px;
+  padding: 5px;
+  text-align: center;
+  margin-top: -15px;
+  z-index: 2;
+}
+.low{
+  display: flex;
+  padding: 10px;
+}
+.diamond{
+  position: relative;
+  top: 150px;
+  padding: 20px;
+}
+.diamond img{
+  width: 150px;
+  height: 150px;
+}
+.para{
+  width: 500px;
+  font-size: 20px;
+}
+.vertical{
+  background: black;
+  color: white;
+  width: 450px;
+  position: absolute;
+  transform: rotate(90deg);
+  padding: 5px;
+  left: 600px;
+  text-align: center;
+}
+.rowTwo{
+  display: flex;
+  width: 50%;
+}
+.yelo{
+  position: relative;
+  top: 50px;
+  left: 300px;
+  height: 250px;
+  width: 250px;
+  border-radius: 50%;
+  background: #ffbd17;
+  z-index: 2;
+}
+.blk{
+    position: relative;
+    top: -80px;
+    left: 400px;
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  background: black;
+}
+.probtm{
+  margin-top: -50px;
+  padding:0 100px;
+}
+.prof{
+  position: relative;
+  z-index: 3;
+height: 190px;
+width: 190px;
+border-radius: 50%;
+  top: 100px;
+}
+.name{
+  font-size: 40px;
+  font-weight: bold;
+}
+.profile{
+  width: 700px;
+
+}
+.protop{
+  height: 350px;
+}
+.topimg{
+  position: absolute;
+  z-index: 2;
+  height: 300px;
+  width: 300px;
+}
+.smthng{
+  margin-top: -40px;
+  font-size: 30px;
+  font-weight: bold;
+}
+.yellowed{
+  width: 0;
+  position: absolute;
+}
+.vyelo{
+  padding: 5px;
+  transform: rotate(90deg);
+  position: relative;
+  background: #ffbd17;
+  top: 375px;
+  width: 400px;
+  right: -500px;
+}
+.hyelo{
+  background: #ffbd17;
+  width: 350px;
+  position: relative;
+  top: 520px;
+  right: -420px;
+  padding: 5px;
+}
+.section3{
+  width: 100%;
+}
+.frow, .srow{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.cell1{
+  width: 100%;
+  height: 400px;
+  background: #e3e3e3;
+  padding: 30px 450px 0 100px;
+}
+.svchead, .cellhead{
+  font-size: 40px;
+  font-weight: bold;
+}
+.svcs, .cellpara{
+font-size: 20px;
+}
+.srow{
+  display: flex;
+}
+.cell2{
+  color: white;
+    width: 30%;
+    background: #383838;
+    padding: 30px 100px 0 100px;
+}
+.cell3{
+  color: white;
+    width: 30%;
+    background: black;
+    padding: 30px 100px 0 100px;
+}
+.cell4{
+  color: white;
+  width: 30%;
+  background: #212121;
+  padding: 30px 100px 0 100px;
+}
+.cell11{
+  width: 100%;
+  height: 300px;
+  background: #ffbd17;
+  padding: 30px 450px 0 100px;
+}
+.blackedwds{
+  background: #ffbd17;
+}
+.hblack{
+  position: absolute;
+  margin-top: -10px;
+  right: 0px;
+  color: white;
+  background: black;
+  width: 600px;
+  padding: 5px;
+}
+.vblack{
+  position: absolute;
+  right: 0px;
+  margin-top: 150px;
+  transform: rotate(270deg);
+  color: white;
+  background: black;
+  width: 300px;
+  padding: 5px;
+
+}
+.svchead1{
+    font-size: 40px;
+    font-weight: bold;
+}
+.cellhead1{
+  font-size: 25px;
+  font-weight: bold;
+}
+.svcs1{
+  font-weight: bold;
+  font-size: 25px;
+}
+.cellpara1{
+font-size: 20px;
+margin-top: 50px;
+font-weight: bold;
+}
+.cellpara11{
+  font-size: 20px;
+  font-weight: bold;
+}
+.cell21{
+    width: 30%;
+    padding: 30px 100px 0 100px;
+}
+.cell31{
+    width: 30%;
+    padding: 30px 100px 0 100px;
+}
+.cell41{
+  width: 30%;
+  padding: 30px 100px 0 100px;
+}
+.paras{
+  margin-top: 50px;
+}
+.paras a{
+  color: black;
+}
+.paras a:hover{
+  font-weight: bold;
+}
+.cellm{
+  position: absolute;
+  right: 400px;
+}
+.cellm img{
+  margin-top: -70px;
+  width: 150px;
+  height: 150px;
+}
+.footer{
+  width: 100%;
+  justify-content: center;
+  background: black;
+  display: flex;
+  color: white;
+}
+.celll{
+  width: 30%;
+  text-align: left;
+    padding: 30px 100px 0 100px;
+}
+.cellc{
+    width: 30%;
+  text-align: center;
+    padding: 30px 100px 0 100px;
+}
+.cellr{
+    width: 30%;
+  text-align: right;
+    padding: 30px 100px 0 100px;
+}
