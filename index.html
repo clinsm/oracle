@@ -49,9 +49,25 @@
         <a href="contact" class="hom">
           Contact Us
         </a>
+      </div>
 
+      <div id="icon" class="menu_icon" onclick="show()" align = "right">
+        <div class="bars"></div>
+        <div class="bars"></div>
+        <div class="bars"></div>
+
+        <div class="menu" id="menu">
+          <p class="vnav"><a href="index">Home</a></p>
+          <p class="vnav"><a href="about">About Us</a></p>
+          <p class="vnav"><a href="work">Our Work</a></p>
+          <p class="vnav"><a href="service">Services</a></p>
+          <p class="vnav"><a href="careers">Careers </a></p>
+          <p class="vnav"><a href="stories">Our Stories</a></p>
+          <p class="vnav"><a href="contact">Contact Us</a></p>
+        </div>
       </div>
     </div>
+
       <!--The navigation bar-->
     <div class="section1">
       <img src="img/benz.jpg" alt="background">
@@ -232,25 +248,57 @@
 var navbar = document.getElementById('nav');
 var hom = document.getElementsByClassName('hom');
 var logo = document.getElementById('logo');
+  var icon = document.getElementById("icon");
+  var bars = document.getElementsByClassName("bars");
 window.onscroll = function() {
 // pageYOffset or scrollY
 if (window.pageYOffset > 0) {
   navbar.style.backgroundColor = "#ffbd17";
   navbar.style.boxShadow = "0px 4px 8px -2px rgba(0,0,0,0.75)";
   logo.style.color = "black";
+  icon.style.border = "1px solid black";
   for(var i=0; i< hom.length; i++){
     hom[i].style.color = "black";
+  }
+  for(var a=0; a< bars.length; a++){
+    bars[a].style.backgroundColor = "black";
   }
 
 } else {
   navbar.style.backgroundColor = "rgba(0,0,0,0.0)";
   navbar.style.boxShadow = "inset 1px 32px 35px -26px rgba(0,0,0,0.75)";
   logo.style.color = "white";
+  icon.style.border = "1px solid white";
   for(var i=0; i< hom.length; i++){
     hom[i].style.color = "white";
   }
+  for(var a=0; a< bars.length; a++){
+    bars[a].style.backgroundColor = "white";
+  }
+ }
 }
-}
+//for the menu show hide thing
+    menu.style.display = "none";
+     function show() {
+       var menu = document.getElementById("menu");
+       var bars = document.getElementsByClassName("bars");
+        var icon = document.getElementById("icon");
+       if (menu.style.display === "none") {
+         menu.style.display = "block";
+         icon.style.border = "1px solid black";
+         icon.style.backgroundColor = "#ffbd17";
+         for(var i=0; i< bars.length; i++){
+           bars[i].style.backgroundColor = "black";
+         }
+       }else if (menu.style.display === "block") {
+           menu.style.display = "none";
+           icon.style.border = "1px solid white";
+           icon.style.backgroundColor = "rgba(0,0,0,0.0)";
+           for(var i=0; i< bars.length; i++){
+             bars[i].style.backgroundColor = "white";
+           }
+       }
+     }
     </script>
   </body>
 </html>
