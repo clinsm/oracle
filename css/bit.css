@@ -8,8 +8,8 @@ body{
   margin: 0;
 }
 /*For test purposes*/
-/*affects screens less than 981px*/
-@media screen and (max-width: 980px) {
+/*affects screens less than 1024px*/
+@media screen and (max-width: 1024px) {
   .navbar{
     z-index: 10;
     position: fixed;
@@ -19,6 +19,9 @@ body{
   }
   .logo{
     float: left;
+    margin: 10px;
+  }
+  .logoo{
     margin: 10px;
   }
   .nav{
@@ -31,6 +34,20 @@ body{
     float: right;
     margin: 10px;
     cursor: pointer;
+  }
+  .bmenu_icon{
+    border: 1px solid black;
+    position: absolute;
+    right: 0;
+    float: right;
+    margin: 10px;
+    cursor: pointer;
+  }
+  .bbars{
+    height: 5px;
+    width: 50px;
+    margin: 10px;
+    background: black;
   }
   .bars{
     height: 5px;
@@ -49,7 +66,12 @@ body{
     text-transform: uppercase;
     font-size: 20px;
   }
-  .vnav a:hover{
+  .bvnav a{
+    color: #ffbd17;
+    text-transform: uppercase;
+    font-size: 20px;
+  }
+  .bvnav a:hover, .vnav a:hover{
     font-weight: bold;
   }
 
@@ -62,10 +84,71 @@ body{
     font-size: 20px;
   }
 
+  /*The about page*/
+  .paraa{
+    font-size: 50px;
+    padding: 0 0 0 100px;
+  }
+  .parab{
+    font-size: 50px;
+    color: #ffbd17;
+    font-weight: bold;
+  }
+  /*end about*/
+
+  .svchead{
+    font-size: 40px;
+    font-weight: bold;
+  }
+  .svcs{
+  font-size: 20px;
+  }
+  .cell2, .cell3, .cell4{
+    height: 200px;
+    overflow: hidden;
+    padding: 0 20px;
+  }
+  .cellhead{
+    font-size: 25px;
+    font-weight: bold;
+  }
+  .cellpara{
+    line-height: 21px;
+  }
+  .cell2{
+    color: white;
+      width: 30%;
+      background: #383838;
+  }
+  .cell3{
+    color: white;
+      width: 30%;
+      background: black;
+  }
+  .cell4{
+    color: white;
+    width: 30%;
+    background: #212121;
+  }
+  .celll{
+    width: 30%;
+    text-align: left;
+      padding: 30px;
+  }
+  .cellc{
+      width: 30%;
+    text-align: center;
+      padding: 30px;
+  }
+  .cellr{
+      width: 30%;
+    text-align: right;
+      padding: 30px;
+  }
 }
 
-/*affects screens more than 981px*/
-@media screen and (min-width: 981px) {
+/*affects screens more than 1024px*/
+@media screen and (min-width: 1025px) {
   .navbar{
     position: fixed;
     width: 100%;
@@ -88,12 +171,57 @@ body{
     font-size: 20px;
     padding: 0 40px 0 40px;
   }
+
+  .cell2{
+    color: white;
+      width: 30%;
+      background: #383838;
+      padding: 0 50px;
+  }
+  .cell3{
+    color: white;
+      width: 30%;
+      background: black;
+      padding: 0 50px;
+  }
+  .cell4{
+    color: white;
+    width: 30%;
+    background: #212121;
+    padding: 0 50px;
+  }
+  .cell2, .cell3, .cell4{
+    height: 400px;
+    overflow: hidden;
+  }
+  .svchead, .cellhead{
+    font-size: 40px;
+    font-weight: bold;
+  }
+  .svcs, .cellpara{
+  font-size: 20px;
+  }
+  .celll{
+    width: 30%;
+    text-align: left;
+      padding: 30px 100px 0 100px;
+  }
+  .cellc{
+      width: 30%;
+    text-align: center;
+      padding: 30px 100px 0 100px;
+  }
+  .cellr{
+      width: 30%;
+    text-align: right;
+      padding: 30px 100px 0 100px;
+  }
 }
 
-.logo{
+.logo, .logoo{
   width: 30%;
 }
-.logo a{
+.logo a, .logoo a{
   color: white;
   text-transform: uppercase;
 }
@@ -403,13 +531,6 @@ border-radius: 50%;
   background: #e3e3e3;
 
 }
-.svchead, .cellhead{
-  font-size: 40px;
-  font-weight: bold;
-}
-.svcs, .cellpara{
-font-size: 20px;
-}
 .svchead{
   margin: 30px 450px 0 100px;
 }
@@ -420,24 +541,7 @@ font-size: 20px;
 .srow{
   display: flex;
 }
-.cell2{
-  color: white;
-    width: 30%;
-    background: #383838;
-    padding: 30px 100px 0 100px;
-}
-.cell3{
-  color: white;
-    width: 30%;
-    background: black;
-    padding: 30px 100px 0 100px;
-}
-.cell4{
-  color: white;
-  width: 30%;
-  background: #212121;
-  padding: 30px 100px 0 100px;
-}
+
 .cell11{
   width: 100%;
   height: 300px;
@@ -453,8 +557,9 @@ font-size: 20px;
   right: 0px;
   color: white;
   background: black;
-  width: 600px;
-  padding: 5px;
+  width: 500px;
+  text-align: center;
+  z-index: 2;
 }
 .vblack{
   position: absolute;
@@ -463,8 +568,8 @@ font-size: 20px;
   transform: rotate(270deg);
   color: white;
   background: black;
-  width: 300px;
-  padding: 5px;
+  width: 320px;
+  text-align: center;
 
 }
 .svchead1{
@@ -510,8 +615,8 @@ font-weight: bold;
   font-weight: bold;
 }
 .cellm{
-  position: absolute;
-  right: 400px;
+  position: relative;
+  right: 0;
 }
 .cellm img{
   margin-top: -70px;
@@ -525,22 +630,6 @@ font-weight: bold;
   display: flex;
   color: white;
 }
-.celll{
-  width: 30%;
-  text-align: left;
-    padding: 30px 100px 0 100px;
-}
-.cellc{
-    width: 30%;
-  text-align: center;
-    padding: 30px 100px 0 100px;
-}
-.cellr{
-    width: 30%;
-  text-align: right;
-    padding: 30px 100px 0 100px;
-}
-
 
 /*From the contact us page*/
 .greet{
