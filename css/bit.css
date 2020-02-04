@@ -133,17 +133,21 @@ body{
   .celll{
     width: 30%;
     text-align: left;
-      padding: 30px;
+      padding: 20px 50px;
   }
   .cellc{
       width: 30%;
     text-align: center;
-      padding: 30px;
+      padding: 20px 50px;
   }
   .cellr{
       width: 30%;
     text-align: right;
-      padding: 30px;
+      padding: 20px 50px;
+  }
+  .cell21, .cell31, .cell41{
+      width: 30%;
+      padding: 20px 50px;
   }
 }
 
@@ -176,23 +180,21 @@ body{
     color: white;
       width: 30%;
       background: #383838;
-      padding: 0 50px;
   }
   .cell3{
     color: white;
       width: 30%;
       background: black;
-      padding: 0 50px;
   }
   .cell4{
     color: white;
     width: 30%;
     background: #212121;
-    padding: 0 50px;
   }
   .cell2, .cell3, .cell4{
     height: 400px;
     overflow: hidden;
+        padding: 0 50px;
   }
   .svchead, .cellhead{
     font-size: 40px;
@@ -215,6 +217,19 @@ body{
       width: 30%;
     text-align: right;
       padding: 30px 100px 0 100px;
+  }
+
+  .cell21{
+      width: 30%;
+      padding: 30px 100px 0 100px;
+  }
+  .cell31{
+      width: 30%;
+      padding: 30px 100px 0 100px;
+  }
+  .cell41{
+    width: 30%;
+    padding: 30px 100px 0 100px;
   }
 }
 
@@ -277,7 +292,7 @@ body{
   margin-top: 0;
 font-weight: bold;
 }
-.section2{
+.section2, .section20{
   height: 600px;
   position: relative;
 }
@@ -593,18 +608,6 @@ font-weight: bold;
   font-size: 20px;
   font-weight: bold;
 }
-.cell21{
-    width: 30%;
-    padding: 30px 100px 0 100px;
-}
-.cell31{
-    width: 30%;
-    padding: 30px 100px 0 100px;
-}
-.cell41{
-  width: 30%;
-  padding: 30px 100px 0 100px;
-}
 .paras{
   margin-top: 50px;
 }
@@ -616,10 +619,12 @@ font-weight: bold;
 }
 .cellm{
   position: relative;
-  right: 0;
+  margin-top: -70px;
+  width: 0;
+  right: 8%;
 }
 .cellm img{
-  margin-top: -70px;
+  position: relative;
   width: 150px;
   height: 150px;
 }
