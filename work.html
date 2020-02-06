@@ -50,6 +50,21 @@
             Contact Us
           </a>
         </div>
+        <div id="bicon" class="bmenu_icon" onclick="show()" align = "right">
+          <div class="bbars"></div>
+          <div class="bbars"></div>
+          <div class="bbars"></div>
+
+          <div class="menu" id="bmenu">
+            <p class="bvnav"><a href="index">Home</a></p>
+            <p class="bvnav"><a href="about">About Us</a></p>
+            <p class="bvnav"><a href="work">Our Work</a></p>
+            <p class="bvnav"><a href="service">Services</a></p>
+            <p class="bvnav"><a href="careers">Careers </a></p>
+            <p class="bvnav"><a href="stories">Our Stories</a></p>
+            <p class="bvnav"><a href="contact">Contact Us</a></p>
+          </div>
+        </div>
       </div>
 
       <!--The first section -->
@@ -98,15 +113,38 @@
         <p class="coli">our&nbsp;</p>
         <p class="colii">work</p>
       </div>
-      <div class="rowii">
-        <img src="img/sirona.png" class="colf" alt="sarona">
-        <img src="img/fox.svg" class="cols" alt="fox life">
-        <img src="img/dstv.svg" class="colt" alt="dstv">
-        <img src="img/dion.png" class="colft" alt="dion wired">
-        <img src="img/nedbank.svg" class="colfth" alt="nedbank">
-        <img src="img/vodacom.svg" class="colsx" alt="vodacom">
-        <img src="img/pick.svg" class="colsv" alt="pick n pay">
-      </div>
+
+      <table border="0" class="tablerowii">
+        <tr>
+          <td>
+            <img src="img/sirona.png" class="colf" alt="sarona">
+          </td>
+
+          <td>
+            <img src="img/fox.svg" class="cols" alt="fox life">
+          </td>
+
+          <td>
+            <img src="img/dstv.svg" class="colt" alt="dstv">
+          </td>
+
+          <td>
+            <img src="img/dion.png" class="colft" alt="dion wired">
+          </td>
+
+          <td>
+            <img src="img/nedbank.svg" class="colfth" alt="nedbank">
+          </td>
+
+          <td>
+            <img src="img/vodacom.svg" class="colsx" alt="vodacom">
+          </td>
+
+          <td>
+            <img src="img/pick.svg" class="colsv" alt="pick n pay">
+          </td>
+        </tr>
+      </table>
     </div>
     <div class="sectioniii">
       <div class="rowfst">
@@ -185,8 +223,8 @@
 
     <div class="footer">
       <div class="celll" align = 'right'>
-        <p class="logo"> <a href="#"> project <br> ORACLE</a></p>
-       <a href="cookie"><p class="below">cookie policy</p></a>
+        <p class="logoo"> <a href="#"> project <br> ORACLE</a></p> <br>
+       <p class="below"><a href="cookie">cookie policy</a></p>
       </div>
       <div class="cellc" align = 'center'>
         <p class="below">Registered in South Africa</p>
@@ -226,6 +264,31 @@ function showSlides(n) {
   slides[slideIndex-1].style.display = "block";
   dots[slideIndex-1].className += " active";
 }
+</script>
+<script type="text/javascript">
+
+//for the show/hide thing in black background
+     bmenu.style.display = "none";
+      function show() {
+        var bmenu = document.getElementById("bmenu");
+        var bbars = document.getElementsByClassName("bbars");
+         var bicon = document.getElementById("bicon");
+        if (bmenu.style.display === "none") {
+          bmenu.style.display = "block";
+          bicon.style.border = "2px solid #ffbd17";
+          bicon.style.backgroundColor = "black";
+          for(var b=0; b< bbars.length; b++){
+            bbars[b].style.backgroundColor = "#ffbd17";
+          }
+        }else if (bmenu.style.display === "block") {
+            bmenu.style.display = "none";
+            bicon.style.border = "1px solid black";
+            bicon.style.backgroundColor = "rgba(0,0,0,0.0)";
+            for(var b=0; b< bbars.length; b++){
+              bbars[b].style.backgroundColor = "black";
+            }
+        }
+      }
 </script>
     <script src="js/bit.js" charset="utf-8"></script>
   </body>

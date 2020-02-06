@@ -7,49 +7,65 @@
     <title>Project Oracle - Cookie Policy</title>
   </head>
   <body>
-    <div class="navbar" id="nav">
-      <div class="logo">
-        <a href="index" id="aboutLogo">
-          Project <br>
-          Oracle
-        </a>
+      <div class="navbar" id="nav">
+        <div class="logo">
+          <a href="index" id="aboutLogo">
+            Project <br>
+            Oracle
+          </a>
+        </div>
+        <div class="nav nabu">
+          <a href="index" class="aboutHom">
+            Home
+          </a>
+        </div>
+        <div class="nav nabu">
+          <a href="about" class="aboutHom">
+              About Us
+          </a>
+        </div>
+        <div class="nav nabu">
+          <a href="work" class="aboutHom">
+            Our Work
+          </a>
+        </div>
+        <div class="nav nabu">
+          <a href="service" class="aboutHom">
+            Services
+          </a>
+        </div>
+        <div class="nav nabu">
+          <a href="career" class="aboutHom">
+            Careers
+          </a>
+        </div>
+        <div class="nav nabu">
+          <a href="stories" class="aboutHom">
+            Our Stories
+          </a>
+        </div>
+        <div class="nav nabu">
+          <a href="contact" class="aboutHom">
+            Contact Us
+          </a>
+        </div>
+
+        <div id="bicon" class="bmenu_icon" onclick="show()" align = "right">
+          <div class="bbars"></div>
+          <div class="bbars"></div>
+          <div class="bbars"></div>
+
+          <div class="menu" id="bmenu">
+            <p class="bvnav"><a href="index">Home</a></p>
+            <p class="bvnav"><a href="about">About Us</a></p>
+            <p class="bvnav"><a href="work">Our Work</a></p>
+            <p class="bvnav"><a href="service">Services</a></p>
+            <p class="bvnav"><a href="careers">Careers </a></p>
+            <p class="bvnav"><a href="stories">Our Stories</a></p>
+            <p class="bvnav"><a href="contact">Contact Us</a></p>
+          </div>
+        </div>
       </div>
-      <div class="nav nabu">
-        <a href="index" class="aboutHom">
-          Home
-        </a>
-      </div>
-      <div class="nav nabu">
-        <a href="about" class="aboutHom">
-            About Us
-        </a>
-      </div>
-      <div class="nav nabu">
-        <a href="work" class="aboutHom">
-          Our Work
-        </a>
-      </div>
-      <div class="nav nabu">
-        <a href="service" class="aboutHom">
-          Services
-        </a>
-      </div>
-      <div class="nav nabu">
-        <a href="career" class="aboutHom">
-          Careers
-        </a>
-      </div>
-      <div class="nav nabu">
-        <a href="stories" class="aboutHom">
-          Our Stories
-        </a>
-      </div>
-      <div class="nav nabu">
-        <a href="contact" class="aboutHom">
-          Contact Us
-        </a>
-      </div>
-    </div>
 
     <div class="sectionfst">
       <div class="sechead">
@@ -156,8 +172,8 @@
 
     <div class="footer">
       <div class="celll" align = 'right'>
-        <p class="logo"> <a href="#"> project <br> ORACLE</a></p>
-       <a href="cookie"><p class="below">cookie policy</p></a>
+        <p class="logo"> <a href="#"> project <br> ORACLE</a></p> <br>
+       <p class="below"> <a href="cookie">cookie policy</a></p>
       </div>
       <div class="cellc" align = 'center'>
         <p class="below">Registered in South Africa</p>
@@ -169,6 +185,31 @@
         <p class="below">All rights reserved</p>
       </div>
     </div>
+    <script type="text/javascript">
+
+    //for the show/hide thing in black background
+         bmenu.style.display = "none";
+          function show() {
+            var bmenu = document.getElementById("bmenu");
+            var bbars = document.getElementsByClassName("bbars");
+             var bicon = document.getElementById("bicon");
+            if (bmenu.style.display === "none") {
+              bmenu.style.display = "block";
+              bicon.style.border = "2px solid #ffbd17";
+              bicon.style.backgroundColor = "black";
+              for(var b=0; b< bbars.length; b++){
+                bbars[b].style.backgroundColor = "#ffbd17";
+              }
+            }else if (bmenu.style.display === "block") {
+                bmenu.style.display = "none";
+                bicon.style.border = "1px solid black";
+                bicon.style.backgroundColor = "rgba(0,0,0,0.0)";
+                for(var b=0; b< bbars.length; b++){
+                  bbars[b].style.backgroundColor = "black";
+                }
+            }
+          }
+    </script>
     <script src="js/bit.js" charset="utf-8"></script>
   </body>
 </html>

@@ -49,33 +49,54 @@
           Contact Us
         </a>
       </div>
-    </div>
-    <!--The first section -->
-    <div class="section1 services">
-      <div class="storygreet servicer">
-        <img class="greetImg" src="img/l.svg" alt="L">
-        <div class="greetxt">
-          <p class="higher">what we</p>
-          <div class="mider">
-            <p class="midber">do</p>
-          </div>
-          <p class="baser">
-           We create brilliant digital products that help our clients get ahead and stay there.
-          </p>
+      <div id="bicon" class="bmenu_icon" onclick="show()" align = "right">
+        <div class="bbars"></div>
+        <div class="bbars"></div>
+        <div class="bbars"></div>
+
+        <div class="menu" id="bmenu">
+          <p class="bvnav"><a href="index">Home</a></p>
+          <p class="bvnav"><a href="about">About Us</a></p>
+          <p class="bvnav"><a href="work">Our Work</a></p>
+          <p class="bvnav"><a href="service">Services</a></p>
+          <p class="bvnav"><a href="careers">Careers </a></p>
+          <p class="bvnav"><a href="stories">Our Stories</a></p>
+          <p class="bvnav"><a href="contact">Contact Us</a></p>
         </div>
       </div>
     </div>
+    <!--The first section -->
+    <table cellpadding = "0" class="tableService" >
+      <tr>
+        <td align = "right" class="imgHolder">
+          <img class="greetImg" src="img/l.svg" alt="L">
+        </td>
+
+        <td align = "center" class="greetHolder" >
+          <div class="greetxt">
+            <p class="higher">what we</p>
+            <div class="mider">
+              <p class="midber">do</p>
+            </div>
+            <p class="baser">
+             We create brilliant digital products that help our clients get ahead and stay there.
+            </p>
+          </div>
+        </td>
+      </tr>
+    </table>
     <div class="sectionscnd">
       <div class="fstrow">
         <div class="piccell" id="firstpic">
-
+          <img src="img/gray.jpg" alt="">
         </div>
         <div class="piccell" id="secondpic">
-
+          <img src="img/grayer.jpg" alt="">
         </div>
       </div>
       <div class="fstrow">
         <div class="piccell" id="thirdpic">
+          <img id="thirdGraphic1" src="img/yellowv.jpg" alt="">
           <img id="thirdGraphic" src="img/hollow.svg" alt="">
         </div>
         <div class="piccell" id="fourthpic">
@@ -125,12 +146,14 @@
           </div>
         </div>
         <div class="piccell" id="firstpic">
-          <img id="thirdGraphic" src="img/diamond.svg" alt="">
+          <img id="thirdGraphic11" src="img/plane.jpg" alt="plane">
+          <img id="thirdGraphica" src="img/diamond.svg" alt="">
         </div>
       </div>
       <div class="fstrow">
         <div class="piccell" id="thirdpic">
-          <img id="thirdGraphic" src="img/tri.svg" alt="">
+          <img id="thirdGraphic111" src="img/city.jpg" alt="plane">
+          <img id="thirdGraphicb" src="img/tri.svg" alt="triangle">
         </div>
         <div class="piccell" id="fourthpic">
           <p id="topmider">advertising</p>
@@ -222,8 +245,8 @@
 
   <div class="footer">
     <div class="celll" align = 'right'>
-      <p class="logo"> <a href="#"> project <br> ORACLE</a></p>
-      <p class="below">cookie policy</p>
+      <p class="logoo"> <a href="#"> project <br> ORACLE</a></p> <br>
+     <p class="below"> <a href="cookie">cookie policy</a></p>
     </div>
     <div class="cellc" align = 'center'>
       <p class="below">Registered in South Africa</p>
@@ -235,6 +258,32 @@
       <p class="below">All rights reserved</p>
     </div>
   </div>
+
+  <script type="text/javascript">
+
+  //for the show/hide thing in black background
+       bmenu.style.display = "none";
+        function show() {
+          var bmenu = document.getElementById("bmenu");
+          var bbars = document.getElementsByClassName("bbars");
+           var bicon = document.getElementById("bicon");
+          if (bmenu.style.display === "none") {
+            bmenu.style.display = "block";
+            bicon.style.border = "2px solid #ffbd17";
+            bicon.style.backgroundColor = "black";
+            for(var b=0; b< bbars.length; b++){
+              bbars[b].style.backgroundColor = "#ffbd17";
+            }
+          }else if (bmenu.style.display === "block") {
+              bmenu.style.display = "none";
+              bicon.style.border = "1px solid black";
+              bicon.style.backgroundColor = "rgba(0,0,0,0.0)";
+              for(var b=0; b< bbars.length; b++){
+                bbars[b].style.backgroundColor = "black";
+              }
+          }
+        }
+  </script>
     <script src="js/bit.js" charset="utf-8"></script>
   </body>
 </html>
